@@ -4,13 +4,13 @@ const output = document.getElementById('output');
 then open this page in a browser and enter 'person' in the console */
 let person = {
     name: {
-        "firstName": "Priyansh",
-        "lastName": "Thakar"
+        "firstName": "Anthony",
+        "lastName": "Burgic"
     },
-    age: 16,
+    age: 19,
     gender: "Male",
     address: "1 Georgian Drive",
-    interests: ["swimming", "reading", "dancing"],
+    interests: ["Running", "Driving", "Cottage Outdoors"],
     greeting: function () {
         alert(`Hello ${this.name}, How are you?`);
     },
