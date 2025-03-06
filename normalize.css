@@ -299,16 +299,14 @@ textarea {
    ========================================================================== */
 
 /*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
+ * Add the correct display in Edge, IE 10+, and Firefox. */
 
 details {
   display: block;
 }
 
 /*
- * Add the correct display in all browsers.
- */
+ * Add the correct display in all browsers.*/
 
 summary {
   display: list-item;
@@ -318,16 +316,14 @@ summary {
    ========================================================================== */
 
 /**
- * Add the correct display in IE 10+.
- */
+ * Add the correct display in IE 10+. */
 
 template {
   display: none;
 }
 
 /**
- * Add the correct display in IE 10.
- */
+ * Add the correct display in IE 10. */
 
 [hidden] {
   display: none;
