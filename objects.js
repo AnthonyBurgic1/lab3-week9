@@ -49,7 +49,17 @@ the string, instead of the alert(). */
 /* STEP 6a: An object can even contain another object - update object person above to include a name object. 
 Note how this breaks the greeting and bio functions - update the greeting function to use this sub-namespace */
 
+person.name = {
+    firstName: "Anthony",
+    lastName: "Burgic"
+};
+
 /* STEP 6b: Now fix the bio() function to use the sub-namespace of 'name' as well */
+
+person.bio = function () {
+    return `The interest of ${this.name.firstName}, of age ${this.age}, living at ${this.address} are ${this.interests.join(", ")}.`;
+};
+
 
 /* STEP 7: You can also use bracket notation, just like an array - 
 objects that are built this way are often referred to as associative arrays */
@@ -90,6 +100,10 @@ let person2 = {
 
 /* STEP 11b: Call up both person1.hello() and person2.hello() 
 in the console to see how 'this' is specific to each object */
+
+// Calling the Hello() function of each person object \\
+person1.hello(); // This outputs "hello", this is P1. \\
+person2.hello(); // This outputs "hello", this is P2. \\
 
 // You have already been using objects all along:
 let myString = 'Words, words, words.'; // this creates an instance of the class String
